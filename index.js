@@ -1,5 +1,5 @@
 const express = require('express')
-const userRoutes = require('./routes/userRoutes.js')
+const userRoutes = require('./routes/userRoute.js')
 const app = express()
 const porta = 3000
 
