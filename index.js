@@ -1,12 +1,12 @@
 const express = require('express')
-const bodyParse = require('body-parse')
+const bodyParse = require('body-parser')
 const userRoute = require('./routes/userRoute.js')
 const userRoutes = require('./routes/userRoute.js')
 const app = express()
 
 const porta = 3000
 
-app.use(bodyParser.urlencode({extend:false}))
+app.use(bodyParser.urlencoded({extend:false}))
 
 app.get('/',(req,res)=>res.send('ola mundo'))
 
